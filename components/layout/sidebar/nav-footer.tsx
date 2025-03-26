@@ -24,7 +24,7 @@ export function NavUser({ user }: { user: Session | null }) {
   const { isMobile } = useSidebar()
 
   const getUserInitials = (name: string | null | undefined) => {
-    if (!name) return 'GO'
+    if (!name) return 'NM'
     const initials = name
       .split(' ')
       .map((part) => part[0])
@@ -49,9 +49,9 @@ export function NavUser({ user }: { user: Session | null }) {
               </Avatar>
               <div className="grid flex-1 text-left text-sm leading-tight">
                 <span className="truncate font-semibold">
-                  {user?.user?.name}
+                  {user?.user?.name ?? 'Natalia Manosso'}
                 </span>
-                <span className="truncate text-xs">{user?.user?.email}</span>
+                <span className="truncate text-xs">{user?.user?.email ?? 'nafmanosso@gmail.com'}</span>
               </div>
               <EllipsisVertical className="ml-auto h-5 w-5" />
             </SidebarMenuButton>
@@ -70,9 +70,9 @@ export function NavUser({ user }: { user: Session | null }) {
                 </Avatar>
                 <div className="grid flex-1 text-left text-sm leading-tight">
                   <span className="truncate font-semibold">
-                    {user?.user?.name}
+                    {user?.user?.name ?? 'Natalia Manosso'}
                   </span>
-                  <span className="truncate text-xs">{user?.user?.email}</span>
+                  <span className="truncate text-xs">{user?.user?.email ?? 'nafmanosso@gmail.com'}</span>
                 </div>
               </div>
             </DropdownMenuLabel>
@@ -81,7 +81,7 @@ export function NavUser({ user }: { user: Session | null }) {
               <Bell className="icon-size mr-2" />
               Notifications
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => signOut({ callbackUrl: '/' })}>
+            <DropdownMenuItem>
               <LogOut className="icon-size mr-2" />
               Log out
             </DropdownMenuItem>
