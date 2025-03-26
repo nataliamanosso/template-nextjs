@@ -79,7 +79,6 @@ export function CompanyForm({ mode }: { mode: 'create' | 'update' }) {
     // } else {
     //   updateCompany.mutate({ companyId, data })
     // }
-    console.log(data)
   }
 
   if (isLoading) {

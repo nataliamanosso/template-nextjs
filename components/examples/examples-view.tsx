@@ -9,6 +9,7 @@ import { ExampleBadges } from '@/components/examples/example-badges'
 import { ExampleToasts } from '@/components/examples/example-toasts'
 
 import { examplesData } from '@/lib/mocks/examples'
+import { TimelineData } from '@/types'
 
 export function ExamplesView() {
   return (

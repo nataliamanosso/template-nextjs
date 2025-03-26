@@ -44,8 +44,6 @@ export function EditProductForm() {
   const router = useRouter()
   const { updateProduct } = useProducts()
 
-  console.log(product)
-
   const form = useForm<CreateProductValues>({
     resolver: zodResolver(createProductSchema),
     defaultValues: {
@@ -57,9 +55,7 @@ export function EditProductForm() {
       unit: product?.unit,
       status: product?.status,
       supplierId: product?.supplierId,
-      createdAt: product?.createdAt
-        ? product.createdAt.toISOString().split('T')[0]
-        : undefined,
+      createdAt: product?.createdAt,
     },
   })
 
@@ -72,6 +68,7 @@ export function EditProductForm() {
       toast({
         title: 'Product updated successfully',
         description: 'Product information has been saved',
+        variant: 'success',
       })
       router.push('/registers/products')
     } catch (error) {

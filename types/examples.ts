@@ -8,6 +8,6 @@ export interface TimelineData {
     email: string
   }
   status: string
-  createdAt: Date
-  updatedAt: Date
+  createdAt: string
+  updatedAt: string
 }
