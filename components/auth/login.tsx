@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { signIn } from 'next-auth/react'
-import { Button } from '@/components/ui/button'
+import { Button, buttonVariants } from '@/components/ui/button'
 import {
   Card,
   CardContent,
@@ -10,8 +10,10 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { PanelsLeftBottom } from 'lucide-react'
+import { ArrowRight, PanelsLeftBottom } from 'lucide-react'
 import { ThemeToggle } from '@/components/layout/theme-toggle'
+import Link from 'next/link'
+import { cn } from '@/lib/utils'
 
 export function Login() {
   const [isLoading, setIsLoading] = useState(false)
@@ -36,21 +38,18 @@ export function Login() {
               Template Nextjs
             </CardTitle>
             <CardDescription className="text-lg">
-              Fazer login com Google
+              Made by Natalia Manosso
             </CardDescription>
           </div>
         </CardHeader>
         <CardContent className="flex flex-col gap-4 items-center">
-          <Button onClick={handleLogin} disabled={isLoading}>
-            {isLoading ? (
-              <div className="flex items-center gap-2">
-                <div className="icon-size border-2 border-current border-t-transparent rounded-full animate-spin" />
-                Entrando...
-              </div>
-            ) : (
-              'Entrar'
-            )}
-          </Button>
+          <Link
+            href={'/dashboard'}
+            className={cn(buttonVariants({ variant: 'default' }))}
+          >
+            <ArrowRight className="icon-size mr-2" />
+            Go to dashboard
+          </Link>
         </CardContent>
       </Card>
     </div>

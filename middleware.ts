@@ -17,10 +17,5 @@ export default withAuth(
 
 //Private routes path
 export const config = {
-  matcher: [
-    '/contracts/:path*',
-    '/dashboard/:path*',
-    '/examples/:path*',
-    '/registers/:path*',
-  ],
+  matcher: [],
 }

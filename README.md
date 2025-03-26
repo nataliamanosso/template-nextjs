@@ -1,6 +1,7 @@
 Here's a project template using Next.js, React, TypeScript, Tailwind CSS, Shadcn UI, NextAuth, Next-Theme, Axios, and React-query.
 
 ## Author
+
 Natalia Manosso - Software Developer
 
 ## Technologies Used
