@@ -20,10 +20,10 @@ export function PageHeader({
   children,
 }: PageHeaderProps) {
   return (
-    <section className="space-y-3">
+    <section className="space-y-4">
       <PageBreadcrumb links={breadcrumbs} mainPage={mainPageTitle} />
       <header className="flex items-center justify-between">
-        <div>
+        <div className="w-2/3 space-y-1">
           <h1 className="text-2xl font-bold tracking-tight">{title}</h1>
           {description && (
             <p className="text-muted-foreground">{description}</p>

@@ -51,7 +51,9 @@ export function NavUser({ user }: { user: Session | null }) {
                 <span className="truncate font-semibold">
                   {user?.user?.name ?? 'Natalia Manosso'}
                 </span>
-                <span className="truncate text-xs">{user?.user?.email ?? 'nafmanosso@gmail.com'}</span>
+                <span className="truncate text-xs">
+                  {user?.user?.email ?? 'nafmanosso@gmail.com'}
+                </span>
               </div>
               <EllipsisVertical className="ml-auto h-5 w-5" />
             </SidebarMenuButton>
@@ -72,7 +74,9 @@ export function NavUser({ user }: { user: Session | null }) {
                   <span className="truncate font-semibold">
                     {user?.user?.name ?? 'Natalia Manosso'}
                   </span>
-                  <span className="truncate text-xs">{user?.user?.email ?? 'nafmanosso@gmail.com'}</span>
+                  <span className="truncate text-xs">
+                    {user?.user?.email ?? 'nafmanosso@gmail.com'}
+                  </span>
                 </div>
               </div>
             </DropdownMenuLabel>

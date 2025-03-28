@@ -9,14 +9,14 @@ import { toast } from '@/hooks/use-toast'
 import { Company, CompanyPayload } from '@/types'
 
 /**
- * Custom React hook to fetch all companies with optional filter parameters.
+ * Custom React hook to fetch all api-crud with optional filter parameters.
  *
  * @param {Record<string, any>} [filterParams] - Optional filter parameters to refine the query.
- * @returns - The result of the query containing an array of companies or an error.
+ * @returns - The result of the query containing an array of api-crud or an error.
  */
 export function useGetAllCompanies(filterParams?: Record<string, any>) {
   return useQuery<Company[], Error>({
-    queryKey: ['companies', filterParams],
+    queryKey: ['api-crud', filterParams],
     queryFn: () => getAllCompanies(filterParams),
   })
 }

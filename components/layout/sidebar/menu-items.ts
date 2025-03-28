@@ -10,7 +10,7 @@ export const menuItems = [
   },
   {
     title: 'Mock Card List',
-    url: '/contracts',
+    url: '/card-list',
     icon: FileText,
     items: [],
   },
@@ -22,11 +22,11 @@ export const menuItems = [
     items: [
       {
         title: 'Mock CRUD',
-        url: '/registers/products',
+        url: '/cruds/mock-crud',
       },
       {
         title: 'API CRUD',
-        url: '/registers/companies',
+        url: '/cruds/api-crud',
       },
     ],
   },
