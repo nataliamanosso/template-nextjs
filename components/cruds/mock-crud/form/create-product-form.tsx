@@ -62,7 +62,7 @@ export function CreateProductForm() {
         description: 'The product has been added to the system.',
         variant: 'success',
       })
-      router.push('/cruds/products')
+      router.push('/cruds/mock-crud')
     } catch (error) {
       toast({
         title: 'Error registering product',
@@ -94,7 +94,7 @@ export function CreateProductForm() {
             name="type"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Product Type</FormLabel>
+                <FormLabel>Type</FormLabel>
                 <Select
                   onValueChange={field.onChange}
                   defaultValue={field.value}
@@ -227,7 +227,7 @@ export function CreateProductForm() {
           <Button
             type="button"
             variant="outline"
-            onClick={() => router.push('/cruds/products')}
+            onClick={() => router.push('/cruds/mock-crud')}
           >
             Cancel
           </Button>

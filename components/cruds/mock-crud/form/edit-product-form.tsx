@@ -70,7 +70,7 @@ export function EditProductForm() {
         description: 'Product information has been saved',
         variant: 'success',
       })
-      router.push('/cruds/products')
+      router.push('/cruds/mock-crud')
     } catch (error) {
       toast({
         title: 'Error updating product',
@@ -161,7 +161,7 @@ export function EditProductForm() {
             control={form.control}
             name="description"
             render={({ field }) => (
-              <FormItem className="col-span-1 md:col-span-2">
+              <FormItem>
                 <FormLabel>Description</FormLabel>
                 <FormControl>
                   <Input placeholder="Ex: High-quality product" {...field} />
@@ -228,7 +228,7 @@ export function EditProductForm() {
             control={form.control}
             name="supplierId"
             render={({ field }) => (
-              <FormItem className="col-span-1 md:col-span-2">
+              <FormItem>
                 <FormLabel>Supplier ID</FormLabel>
                 <FormControl>
                   <Input placeholder="Ex: supplier_1" {...field} />
@@ -242,7 +242,7 @@ export function EditProductForm() {
           <Button
             type="button"
             variant="outline"
-            onClick={() => router.push('/cruds/products')}
+            onClick={() => router.push('/cruds/mock-crud')}
           >
             Cancel
           </Button>
