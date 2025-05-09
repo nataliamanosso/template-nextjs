@@ -74,7 +74,14 @@ export function ProductsProvider({ children }: { children: ReactNode }) {
     ) {
       return false
     }
-    return !(filters.type.length > 0 && !filters.type.includes(product.type))
+    if (
+      filters.type.length > 0 &&
+      !filters.type.includes(product.type)
+    ) {
+      return false
+    }
+    return !(filters.status.length > 0 &&
+      !filters.status.includes(product.status));
   })
 
   const handleClearFilters = () => {
