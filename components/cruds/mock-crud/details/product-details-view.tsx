@@ -30,7 +30,7 @@ export function ProductDetailsView() {
         title: 'Product deleted',
         description: 'The product was successfully removed',
       })
-      router.push('/cruds/products')
+      router.push('/cruds/mock-crud')
     }
   }
 

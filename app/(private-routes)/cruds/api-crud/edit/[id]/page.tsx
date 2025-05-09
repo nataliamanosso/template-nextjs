@@ -13,7 +13,7 @@ export default async function ApiCrudUpdatePage({ params }: PageParams) {
       title: 'CRUDs',
     },
     {
-      title: 'Companies',
+      title: 'API CRUD',
       href: '/cruds/api-crud',
     },
   ]

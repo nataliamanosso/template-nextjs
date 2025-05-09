@@ -23,12 +23,12 @@ export function ProductTableActions({ product }: ProductTableActionsProps) {
     {
       label: 'View product',
       icon: Eye,
-      onClick: () => router.push(`/cruds/products/${product.id}`),
+      onClick: () => router.push(`/cruds/mock-crud/${product.id}`),
     },
     {
       label: 'Edit product',
       icon: Pencil,
-      onClick: () => router.push(`/cruds/products/edit/${product.id}`),
+      onClick: () => router.push(`/cruds/mock-crud/edit/${product.id}`),
     },
     {
       label: 'Delete product',

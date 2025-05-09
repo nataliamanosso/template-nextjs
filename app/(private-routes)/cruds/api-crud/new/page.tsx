@@ -9,7 +9,7 @@ export default function ApiCrudCreatePage() {
       title: 'CRUDs',
     },
     {
-      title: 'Companies',
+      title: 'API CRUD',
       href: '/cruds/api-crud',
     },
   ]

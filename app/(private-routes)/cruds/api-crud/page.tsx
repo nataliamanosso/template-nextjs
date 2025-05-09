@@ -19,7 +19,7 @@ export default function ApiCrudPage() {
         mainPageTitle="API CRUD"
       >
         <Link
-          href="/app/(private-routes)/cruds/api-crud/new"
+          href="/cruds/api-crud/new"
           className={cn(buttonVariants({ variant: 'default' }))}
         >
           <Plus className="icon-size mr-2" />

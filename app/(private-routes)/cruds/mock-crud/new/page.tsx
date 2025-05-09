@@ -10,7 +10,7 @@ export default function MockCrudCreatePage() {
       title: 'CRUDs',
     },
     {
-      title: 'Products',
+      title: 'Mock CRUD',
       href: '/cruds/mock-crud',
     },
   ]

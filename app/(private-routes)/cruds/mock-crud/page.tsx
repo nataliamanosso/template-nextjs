@@ -17,7 +17,7 @@ export default function MockCrudPage() {
         mainPageTitle="Mock CRUD"
       >
         <Link
-          href="/app/(private-routes)/cruds/mock-crud/new"
+          href="/cruds/mock-crud/new"
           className={cn(buttonVariants({ variant: 'default' }))}
         >
           <Plus className="w-4 h-4 mr-2" />

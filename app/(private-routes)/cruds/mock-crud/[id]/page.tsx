@@ -13,7 +13,7 @@ export default async function MockCrudDetailsPage({ params }: PageParams) {
       title: 'CRUDs',
     },
     {
-      title: 'Products',
+      title: 'Mock CRUD',
       href: '/cruds/mock-crud',
     },
   ]
