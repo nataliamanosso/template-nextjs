@@ -74,4 +74,4 @@ The project will be available at `http://localhost:3000`.
 - `npm run lint`: Runs the linter to check code quality.
 - `npm run format`: Runs prettier to format the code.
 
-Last updated: 03/2025.
+Last updated: 09/2025.
